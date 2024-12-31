@@ -1,0 +1,12 @@
+@require stdja
+
+let-inline ctx \br = 
+let-mutable jou_no <- 1
+let-inline \jou desc =
+	let n = !jou_no in
+	let () = jou_no <- !count + 1 in
+	embed-string (arabic n)
+in
+document (|
+	title = {定款案};
+	author = {特定非営利活動法人Klef 理事長候補};
