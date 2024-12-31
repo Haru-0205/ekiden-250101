@@ -1,0 +1,13 @@
+@require: stdja
+
+StdJa.document(|
+	title = {\SATySFi; Test};
+	author = {kleha};
+	show-title = false;
+	show-toc = false;
+|) '<
+	+p {
+		This is Test Page. + 
+		日本語表示できていますか？
+	}
+>
